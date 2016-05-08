@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">SimpleToLive</string>
+    <string name="title_search_bar">Search</string>
+    <string name="hint_search_bar">search...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_navigate_bar">Search in your area</string>
+    <string name="tab_places_frag">places</string>
+    <string name="tab_favorites_frag">Favorites</string>
+    <string name="tab_map_frag">Map</string>
+    <string name="delete_all">Delete all the places</string>
+    <string name="api_google_search_task">AIzaSyCAwnE1BkRMT7twzokE-1gXIIH-KfrLfMI</string>
+    <string name="title_activity_maps_fragment">Map</string>
+    <string name="context_menu_add_to_fav">Add to Favorites</string>
+    <string name="item_exicst_in_fav">The place is already in Favorites</string>
+    <string name="context_menu_share">Share</string>
+    <string name="progress_dialog_message">Loading..</string>
+    <string name="settings_menu">settings</string>
+    <string name="settings_switch_km_mi">KM or MILES</string>
+    <string name="km">KM</string>
+    <string name="miles">MILES</string>
+    <string name="settings_km_or_miles_key">kmKey</string>
+    <string name="share_title">Hello I want to share with you a special place</string>
+    <string name="charge_connected">Charging connecting</string>
+    <string name="charge_disconnected">Charging disconnected</string>
+    <string name="my_location">My location</string>
+    <string name="direction_toast">Show direction to:</string>
+    <string name="offline_mode">Offline mode</string>
+    <string name="offline_mode_search">Cant find places in offline mode</string>
+    <string name="more_places">wait.. there are other places.</string>
+    <string name="no_more_places">No more places</string>
+    <string name="no_internet_connection">Internet connection is not available</string>
+    <string name="gps_settings_title">GPS settings</string>
+    <string name="gps_settings_message">GPS is not enabled. Do you want to go to settings menu?</string>
+    <string name="gps_settings_button_setting">Setting</string>
+    <string name="gps_settings_button_cancel">Cancel</string>
+    <string name="location_again_title">Location</string>
+    <string name="location_again_meesage">Try to find location again?</string>
+    <string name="location_again_positive_button">YES</string>
+    <string name="location_again_negative_button">No</string>
+    <string name="settings_find_location">Find my location</string>
+    <string name="location_found">Your location founded</string>
+    <string name="not_found_location">Your location could not be found</string>
+    <string name="seekBarKey">customPref</string>
+    <string name="looking_for_your_location">Looking for your location</string>
+    <string name="phone_number">Phone number:</string>
+    <string name="google_app_id">125410</string>
+    <string name="exit_dialog_title">That it</string>
+    <string name="exit_dialog_message">are you sure you want to exit?</string>
+    <string name="exit_dialog_positive_btn">Yes</string>
+    <string name="exit_dialog_negative_btn">No</string>
+</resources>

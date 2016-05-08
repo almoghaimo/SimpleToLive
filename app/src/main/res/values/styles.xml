@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="showcaseViewStyle">@style/CustomShowcaseTheme</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="TextCardView" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorTextCardView</item>
+        <item name="android:textSize">25dp</item>
+
+    </style>
+
+    <style name="CustomShowcaseTheme" parent="ShowcaseView.Light">
+        <item name="sv_backgroundColor">@color/tutorial_background</item>
+        <item name="sv_buttonBackgroundColor">#CF3119</item>
+        <item name="sv_buttonText">Close</item>
+        <!--<item name="sv_titleTextAppearance">@style/CustomTitle</item>-->
+        <!--<item name="sv_detailTextAppearance">@style/CustomDetailText</item>-->
+    </style>
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <color name="tutorial_background">#cd090450</color>
+</resources>

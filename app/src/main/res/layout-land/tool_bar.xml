@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/action_bar"
+    android:background="@color/colorActionBar">
+    <Button
+        android:id="@+id/actionBarNavigate"
+        android:background="@drawable/location_img"
+        android:title="@string/title_navigate_bar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:textColor="@color/colorTextCardView"
+        android:layout_gravity="right" />
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/actionBarSearch"
+        android:layout_gravity="right"
+        android:actionViewClass="android.support.v7.widget.SearchView"/>
+
+</android.support.v7.widget.Toolbar>
+

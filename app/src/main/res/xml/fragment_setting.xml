@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:title="@string/settings_switch_km_mi"
+        android:summaryOn="@string/km"
+        android:summaryOff="@string/miles"
+        android:switchTextOn="@string/km"
+        android:switchTextOff="@string/miles"
+        android:defaultValue="true"
+        android:key="@string/settings_km_or_miles_key"
+        />
+    <com.h.almog.simpletolive.activities.SeekBarPreference
+        android:key= "@string/seekBarKey"
+        android:defaultValue="32"
+        android:title="Radius to search(KM)"/>
+
+    </PreferenceScreen>

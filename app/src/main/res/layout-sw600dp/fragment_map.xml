@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+    android:layout_above="@+id/mapFrag">
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/containerMap"
+            android:orientation="vertical">
+
+
+
+            <!-- TODO: Update blank fragment layout -->
+
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="510dp"
+            android:id="@+id/mainHolderMapFrag"
+            android:background="#f9845b">
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:layout_gravity="top"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:fillViewport="false">
+                <LinearLayout
+                    android:id="@+id/linearScrollView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="top|left"
+                    android:orientation="horizontal"
+                    android:foregroundGravity="top" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:textColor="@color/colorTextCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:maxLines="1"
+                android:id="@+id/txtPlaceNameMap"
+                app:layout_anchorGravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/txtDistanceMap"
+                android:layout_alignParentRight="false"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/txtAddressMap"
+                app:layout_anchorGravity="left|start"
+                android:gravity="left"
+                android:maxLines="1"
+                android:layout_below="@+id/txtPlaceNameMap"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="8dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp"
+                android:id="@+id/txtPhoneNumber"
+                android:layout_below="@+id/txtAddressMap"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/linearRatingAndDistance"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/txtPhoneNumber"-->
+                <!--android:layout_above="@+id/btnFavorite"-->
+                <!--tools:ignore="ObsoleteLayoutParam">-->
+
+            <!--</RelativeLayout>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/txtDistanceMap"
+                android:layout_gravity="right"
+                android:textSize="16sp"
+                android:layout_below="@+id/horizontal_scroll"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtRating"
+                android:layout_gravity="left"
+                android:textSize="16sp"
+                android:layout_above="@+id/txtPlaceNameMap"
+                android:layout_alignLeft="@+id/txtAddressMap"
+                android:layout_alignStart="@+id/txtAddressMap" />
+
+        </RelativeLayout>
+
+        <fragment
+            android:id="@+id/mapFrag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.SupportMapFragment" />
+
+    </LinearLayout>
+    <Button
+    android:id="@+id/btnWeb"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_margin="8dp"
+    app:layout_anchorGravity="bottom|right|end"
+    app:layout_anchor="@id/mainHolderMapFrag"
+    android:background="@drawable/globus" />
+    <Button
+        android:id="@+id/btnNavigate"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_anchor="@id/mainHolderMapFrag"
+        android:background="@drawable/navigate" />
+    <Button
+        android:id="@+id/btnFavorite"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        app:layout_anchorGravity="bottom|left|start"
+        app:layout_anchor="@id/mainHolderMapFrag"
+        android:background="@drawable/star_empty" />
+    </android.support.design.widget.CoordinatorLayout>
+
+

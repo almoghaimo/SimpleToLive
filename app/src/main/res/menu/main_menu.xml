@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my_app="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.MainActivity">
+
+    <!--<item-->
+        <!--android:id="@+id/actionBarSearch"-->
+        <!--android:icon="@drawable/search_icon"-->
+        <!--android:title="@string/title_search_bar"-->
+        <!---->
+        <!--my_app:actionViewClass="android.support.v7.widget.SearchView"-->
+        <!--my_app:showAsAction="ifRoom"/>-->
+
+    <!--<item-->
+        <!--android:id="@+id/actionBarNavigate"-->
+        <!--android:icon="@drawable/location_img"-->
+        <!--android:title="@string/title_navigate_bar"-->
+        <!--my_app:showAsAction="always"-->
+        <!--my_app:actionViewClass="android.widget.ImageButton"/>-->
+    <item
+    android:id="@+id/deleteAll"
+    android:title="@string/delete_all"/>
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings_menu"/>
+    <item
+        android:id="@+id/findLocation"
+        android:title="@string/settings_find_location"/>
+
+</menu>
